@@ -1,0 +1,83 @@
+/* App.css */
+
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar-left {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px; /* Add padding for mobile devices */
+}
+
+#date-picker {
+  width: 80%; /* Make the calendar wider */
+  max-width: 800px; /* Set a maximum width */
+  margin: 20px auto; /* Center the calendar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-calendar {
+  width: 100%;
+  max-width: 800px;
+}
+
+.book-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px; /* Add space below the calendar */
+}
+
+.day-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+.night-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  #date-picker {
+    width: 100%; /* Make the calendar full-width on mobile */
+  }
+}
