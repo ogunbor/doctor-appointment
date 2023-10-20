@@ -36,9 +36,9 @@ const App = () => {
     <div className={`container ${mode ? 'day-mode' : 'night-mode'}`}>
       <nav>
         <div className="navbar-left">
-          <h1>BitDoc</h1>
+          <h3 style={{color: "grey"}}>BitDoc</h3>
         </div>
-        <div className="navbar-right">
+        <div className="navbar-right" style={{color: "grey"}}>
           <label htmlFor="mode-switch">{mode ? 'Night' : 'Day'} Mode</label>
           <input
             type="checkbox"
